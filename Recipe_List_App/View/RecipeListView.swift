@@ -10,7 +10,7 @@ import SwiftUI
 struct RecipeListView: View {
     
     // Reference the view model
-    @ObservedObject var model = RecipeModel()
+    @EnvironmentObject var model:RecipeModel
     
     var body: some View {
         
@@ -43,8 +43,9 @@ struct RecipeListView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct RecipeListView_Previews: PreviewProvider {
     static var previews: some View {
         RecipeListView()
+            .environmentObject(RecipeModel())
     }
 }
