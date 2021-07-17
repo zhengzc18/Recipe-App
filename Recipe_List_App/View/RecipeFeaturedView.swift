@@ -14,22 +14,22 @@ struct RecipeFeaturedView: View {
     var body: some View {
         
         VStack(alignment: .leading, spacing: 0) {
-            
+            // Third
             Text("Featured Recipes")
                 .bold()
                 .padding(.leading)
                 .padding(.top, 40)
                 .font(.largeTitle)
                 
-                
+               // Second
             GeometryReader { geo in
                 
                 TabView {
-                    
+               // First
         ForEach (0..<model.recipes.count) { index in
                         
         if model.recipes[index].featured == true {
-                            
+            // Fourth
                 // Recipe card
             ZStack {
                      Rectangle()
