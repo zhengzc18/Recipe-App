@@ -21,29 +21,31 @@ struct RecipeListView: View {
                 Text("All Recipes")
                     .bold()
                     .padding(.top, 40)
+                    .padding(.leading)
                     .font(.largeTitle)
                 
                 // Second
-                ScrollView {
-                    LazyVStack (alignment: .leading){
-                        ForEach(model.recipes) { r in
+        ScrollView {
+            LazyVStack (alignment: .leading){
+        ForEach(model.recipes) { r in
                             
-                            NavigationLink(
-                                destination: RecipeDetailView(recipe: r),
+            NavigationLink(
+                destination: RecipeDetailView(recipe: r),
                                 
-                                label: {
+                  label: {
                                     
-                                    // MARK: Row item
-                                    HStack(spacing: 20.0) {
-                                        Image(r.image)
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: 50, height: 50, alignment: .center)
-                                            .cornerRadius(5)
-                                            .clipped()
-                            Text(r.name)
-                                .font(.headline)
-                                .foregroundColor(.black)
+                    // MARK: Row item
+        HStack(spacing: 20.0) {
+                    Image(r.image)
+                            .resizable()
+                            .scaledToFit()
+        .frame(width: 50, height: 50, alignment: .center)
+                        .cornerRadius(5)
+                        .clipped()
+                    
+                    Text(r.name)
+                        .font(.headline)
+                .foregroundColor(.black)
                                     }
                                 })
                             

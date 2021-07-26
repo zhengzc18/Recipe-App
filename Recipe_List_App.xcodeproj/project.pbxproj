@@ -18,6 +18,7 @@
 		AF866B1025C4098600631D09 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF866B0F25C4098600631D09 /* DataService.swift */; };
 		AF866B6A25C7D9DB00631D09 /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF866B6925C7D9DB00631D09 /* RecipeDetailView.swift */; };
 		AF8C9A9C25E62E9400F840BE /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = AF8C9A9B25E62E9400F840BE /* recipes.json */; };
+		AFCFAC0A26AD256F00B9432C /* Rational.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCFAC0926AD256F00B9432C /* Rational.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		AF866B0F25C4098600631D09 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		AF866B6925C7D9DB00631D09 /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
 		AF8C9A9B25E62E9400F840BE /* recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = recipes.json; path = "Recipe_List_App/RecipeListApp Resources/recipes.json"; sourceTree = SOURCE_ROOT; };
+		AFCFAC0926AD256F00B9432C /* Rational.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rational.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 		AF866AE225C3FFE900631D09 = {
 			isa = PBXGroup;
 			children = (
+				AFCFAC0826AD234600B9432C /* Utilities */,
 				AF866AED25C3FFE900631D09 /* Recipe_List_App */,
 				AF866AEC25C3FFE900631D09 /* Products */,
 			);
@@ -130,6 +133,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		AFCFAC0826AD234600B9432C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AFCFAC0926AD256F00B9432C /* Rational.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -202,6 +213,7 @@
 			files = (
 				AF866B0825C405AD00631D09 /* Recipe.swift in Sources */,
 				AF866B6A25C7D9DB00631D09 /* RecipeDetailView.swift in Sources */,
+				AFCFAC0A26AD256F00B9432C /* Rational.swift in Sources */,
 				AF866B0B25C407C900631D09 /* RecipeModel.swift in Sources */,
 				AF866AF125C3FFE900631D09 /* RecipeListView.swift in Sources */,
 				AF866AEF25C3FFE900631D09 /* Recipe_List_App.swift in Sources */,
